@@ -1,0 +1,47 @@
+#skills {
+  padding: 91px 0 110px;
+}
+
+#skills p {
+  margin: 69px 0 83px;
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills__soft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills__description {
+  display: block;
+  margin: 24px 0 40px;
+  height: 27px;
+
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #828282;
+}
+
+@media (max-width: 425px) {
+  #skills {
+    padding: 83px 73px 99px;
+  }
+
+  #skills p {
+    margin: 50px 0 71px;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 82px 0;
+  }
+}

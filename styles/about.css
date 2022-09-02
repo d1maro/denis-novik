@@ -1,0 +1,28 @@
+#about {
+  padding: 120px 0 107px;
+
+  background-color: #f6f6f6;
+}
+
+#about h2 {
+  margin-bottom: 18px;
+}
+
+.about__text {
+  max-width: 485px;
+  line-height: 22px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about__text_middle {
+  margin: 44px 0 44px;
+}
+
+/* Начало медиа-запроса */
+
+@media (max-width: 425px) {
+  #about {
+    padding: 81px 30px 76px;
+  }
+}

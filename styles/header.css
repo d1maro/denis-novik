@@ -1,0 +1,129 @@
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 33px 0 32px;
+  border-bottom: 1px solid #828282;
+}
+
+.header__link {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: left;
+  color: #828282;
+  transition: 0.3s;
+}
+
+.header__link:hover {
+  color: #070707;
+
+  transition: 0.3s;
+}
+
+.header__burger {
+  display: none;
+}
+
+/* Начало медиа-запроса для мобильной версии */
+
+@media (max-width: 425px) {
+  .header__menu {
+    display: none;
+  }
+
+  .header__burger {
+    display: block;
+    position: fixed;
+    top: 68px;
+    right: 30px;
+  }
+
+/* Закомментировал бургер-меню на HTML/CSS */
+
+  /* #header__burger_toggle {
+    opacity: 0;
+  }
+
+  .header__burger_menu {
+    display: block;
+    position: fixed;
+    top: 66px;
+    left: 27px;
+    visibility: hidden;
+
+    max-width: 100%;
+    max-height: 100%;
+    padding: 66px 27px; 
+
+    list-style: none;
+  }
+
+  .header__burger_button {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__burger_button > span,
+  .header__burger_button > span::before,
+  .header__burger_button > span::after {
+    display: block;
+    position: absolute;
+
+    width: 33px;
+    height: 4px;
+
+    background-color: #000000;
+  }
+
+  .header__burger_button > span::before {
+    content: "";
+    top: -8px;
+  }
+
+  .header__burger_button > span::after {
+    content: "";
+    top: 8px;
+  }
+
+  .header__link_burger {
+    display: block;
+
+    font-family: "Gilroy-Bold", sans-serif;
+    font-size: 34px;
+    line-height: 42px;
+    text-align: left;
+    color: #828282;
+    text-decoration: none;
+
+    transition: 0.3s;
+  }
+
+  .header__link_burger:hover {
+    color: #070707;
+
+    transition: 0.3s;
+  }
+}
+
+#header__burger_toggle:checked ~ .header__burger_button > span {
+  transform: rotate(45deg);
+}
+
+#header__burger_toggle:checked ~ .header__burger_button > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#header__burger_toggle:checked ~ .header__burger_button > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#header__burger_toggle:checked ~ .header__burger_menu {
+  visibility: visible;
+  left: 0;
+}
+
+*/
